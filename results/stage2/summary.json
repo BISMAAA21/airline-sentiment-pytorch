@@ -1,0 +1,132 @@
+{
+  "stage1_rows": 14398,
+  "stage1_unique_normalised_texts": 14398,
+  "initial_unique_token_sequences": 14285,
+  "repeated_groups": 63,
+  "rows_in_repeated_groups": 176,
+  "conflicting_groups": 14,
+  "conflicting_rows": 48,
+  "removal_ledger": [
+    {
+      "step": "empty_token_sequence",
+      "before": 14398,
+      "removed": 0,
+      "remaining": 14398
+    },
+    {
+      "step": "invalid_label",
+      "before": 14398,
+      "removed": 0,
+      "remaining": 14398
+    },
+    {
+      "step": "quarantine_conflicting_token_group",
+      "before": 14398,
+      "removed": 48,
+      "remaining": 14350
+    },
+    {
+      "step": "duplicate_token_sequence_keep_first_source_row",
+      "before": 14350,
+      "removed": 79,
+      "remaining": 14271
+    }
+  ],
+  "distinct_rows_before_split": 14271,
+  "distinct_token_sequences_before_split": 14271,
+  "minimum_10000_passed": true,
+  "splits": {
+    "train": {
+      "rows": 9989,
+      "distinct_sequences": 9989
+    },
+    "validation": {
+      "rows": 2141,
+      "distinct_sequences": 2141
+    },
+    "test": {
+      "rows": 2141,
+      "distinct_sequences": 2141
+    }
+  },
+  "vocabulary_size": 13898,
+  "selected_length": 46,
+  "length_comparison": [
+    {
+      "candidate": "p50",
+      "length": 22,
+      "truncated_tweets": 4766,
+      "truncated_tweets_percent": 47.71248373210531,
+      "discarded_tokens": 26731,
+      "discarded_tokens_percent": 12.875335960002698,
+      "fixed_padding_tokens": 38875,
+      "fixed_padding_percent": 17.68991345024982,
+      "fixed_batch_token_slots": 219758
+    },
+    {
+      "candidate": "p90",
+      "length": 30,
+      "truncated_tweets": 880,
+      "truncated_tweets_percent": 8.809690659725698,
+      "discarded_tokens": 2500,
+      "discarded_tokens_percent": 1.2041577157609795,
+      "fixed_padding_tokens": 94556,
+      "fixed_padding_percent": 31.55337537958421,
+      "fixed_batch_token_slots": 299670
+    },
+    {
+      "candidate": "p95",
+      "length": 32,
+      "truncated_tweets": 382,
+      "truncated_tweets_percent": 3.8242066272900193,
+      "discarded_tokens": 1024,
+      "discarded_tokens_percent": 0.4932230003756972,
+      "fixed_padding_tokens": 113058,
+      "fixed_padding_percent": 35.36953148463309,
+      "fixed_batch_token_slots": 319648
+    },
+    {
+      "candidate": "p99",
+      "length": 35,
+      "truncated_tweets": 96,
+      "truncated_tweets_percent": 0.9610571628791672,
+      "discarded_tokens": 252,
+      "discarded_tokens_percent": 0.12137909774870674,
+      "fixed_padding_tokens": 142253,
+      "fixed_padding_percent": 40.68847160447921,
+      "fixed_batch_token_slots": 349615
+    },
+    {
+      "candidate": "maximum",
+      "length": 46,
+      "truncated_tweets": 0,
+      "truncated_tweets_percent": 0.0,
+      "discarded_tokens": 0,
+      "discarded_tokens_percent": 0.0,
+      "fixed_padding_tokens": 251880,
+      "fixed_padding_percent": 54.81682024139597,
+      "fixed_batch_token_slots": 459494
+    }
+  ],
+  "encoded_collision_rows": 5,
+  "cross_split_encoded_collision_groups": 1,
+  "all_checks_passed": true,
+  "observed_training_token_types": 13896,
+  "encoded_diagnostics": {
+    "encoded_collision_groups": 1,
+    "encoded_collision_rows": 5,
+    "distinct_encoded_inputs": 14267,
+    "cross_split_encoded_collision_groups": 1,
+    "training_only_groups": 0,
+    "groups_involving_held_out": 1,
+    "rows_by_split": {
+      "train": 0,
+      "validation": 4,
+      "test": 1
+    },
+    "colliding_rows_truncated": 0,
+    "groups_explained_by_unseen_tokens_without_truncation": 1,
+    "policy": "Non-fatal representation diagnostic; no exclusions, relabelling, refitting or test scoring."
+  },
+  "status": "complete"
+}

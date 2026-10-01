@@ -1,0 +1,14 @@
+{
+  "checks": {
+    "previous_stages_unchanged": true,
+    "class_weights_training_only": true,
+    "cnn_checkpoint_reload_and_selection": true,
+    "cnn_early_stopping_verified": true,
+    "gru_checkpoint_reload_and_selection": true,
+    "gru_early_stopping_verified": true
+  },
+  "all_passed": true,
+  "test_evaluated": false,
+  "tuning_started": false,
+  "scope": "saved artifacts, training class counts and validation checkpoint reload only"
+}

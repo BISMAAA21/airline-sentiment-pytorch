@@ -1,0 +1,408 @@
+{
+  "checkpoints": [
+    {
+      "accuracy": 0.7580569827183559,
+      "macro_f1": 0.7064145131537233,
+      "weighted_f1": 0.7653184778050165,
+      "per_class": {
+        "negative": {
+          "precision": 0.8879803761242846,
+          "recall": 0.7979426891991183,
+          "f1-score": 0.8405572755417957,
+          "support": 1361.0
+        },
+        "neutral": {
+          "precision": 0.5410714285714285,
+          "recall": 0.679372197309417,
+          "f1-score": 0.6023856858846919,
+          "support": 446.0
+        },
+        "positive": {
+          "precision": 0.6536312849162011,
+          "recall": 0.7005988023952096,
+          "f1-score": 0.6763005780346821,
+          "support": 334.0
+        },
+        "accuracy": 0.7580569827183559,
+        "macro avg": {
+          "precision": 0.6942276965373048,
+          "recall": 0.7259712296345816,
+          "f1-score": 0.7064145131537233,
+          "support": 2141.0
+        },
+        "weighted avg": {
+          "precision": 0.7791555339607752,
+          "recall": 0.7580569827183559,
+          "f1-score": 0.7653184778050165,
+          "support": 2141.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          1086,
+          199,
+          76
+        ],
+        [
+          95,
+          303,
+          48
+        ],
+        [
+          42,
+          58,
+          234
+        ]
+      ],
+      "model": "cnn",
+      "seed": 42,
+      "checkpoint": "results\\stage5\\cnn_grid0_seed42\\cnn_best.pt",
+      "checkpoint_sha256": "763bca4a1b6b645c8a3212b3f526c0fb9bdbf446c1c25faf67a66f98a2c3553f",
+      "evaluation_seconds": 0.20794110000133514,
+      "parameters_unchanged": true,
+      "saved_metrics_verified": true
+    },
+    {
+      "accuracy": 0.7669313404950957,
+      "macro_f1": 0.7122209681464761,
+      "weighted_f1": 0.7699953267404284,
+      "per_class": {
+        "negative": {
+          "precision": 0.8658442559753277,
+          "recall": 0.8251285819250551,
+          "f1-score": 0.8449962377727614,
+          "support": 1361.0
+        },
+        "neutral": {
+          "precision": 0.5767634854771784,
+          "recall": 0.6233183856502242,
+          "f1-score": 0.5991379310344828,
+          "support": 446.0
+        },
+        "positive": {
+          "precision": 0.6657458563535912,
+          "recall": 0.7215568862275449,
+          "f1-score": 0.6925287356321839,
+          "support": 334.0
+        },
+        "accuracy": 0.7669313404950957,
+        "macro avg": {
+          "precision": 0.7027845326020324,
+          "recall": 0.7233346179342748,
+          "f1-score": 0.7122209681464761,
+          "support": 2141.0
+        },
+        "weighted avg": {
+          "precision": 0.7744089971636348,
+          "recall": 0.7669313404950957,
+          "f1-score": 0.7699953267404284,
+          "support": 2141.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          1123,
+          168,
+          70
+        ],
+        [
+          117,
+          278,
+          51
+        ],
+        [
+          57,
+          36,
+          241
+        ]
+      ],
+      "model": "cnn",
+      "seed": 43,
+      "checkpoint": "results\\stage5\\cnn_selected_seed43\\cnn_best.pt",
+      "checkpoint_sha256": "7061a91516fb7fbd2c7d31b6837c5fc34b523f652803a0eef101739508f5e03c",
+      "evaluation_seconds": 0.1640313000025344,
+      "parameters_unchanged": true,
+      "saved_metrics_verified": true
+    },
+    {
+      "accuracy": 0.7692666978047641,
+      "macro_f1": 0.7078911177760173,
+      "weighted_f1": 0.7707032756191133,
+      "per_class": {
+        "negative": {
+          "precision": 0.8599250936329588,
+          "recall": 0.8434974283614989,
+          "f1-score": 0.8516320474777448,
+          "support": 1361.0
+        },
+        "neutral": {
+          "precision": 0.578494623655914,
+          "recall": 0.6031390134529148,
+          "f1-score": 0.5905598243688255,
+          "support": 446.0
+        },
+        "positive": {
+          "precision": 0.6744868035190615,
+          "recall": 0.688622754491018,
+          "f1-score": 0.6814814814814815,
+          "support": 334.0
+        },
+        "accuracy": 0.7692666978047641,
+        "macro avg": {
+          "precision": 0.7043021736026448,
+          "recall": 0.7117530654351439,
+          "f1-score": 0.7078911177760173,
+          "support": 2141.0
+        },
+        "weighted avg": {
+          "precision": 0.7723705030174502,
+          "recall": 0.7692666978047641,
+          "f1-score": 0.7707032756191133,
+          "support": 2141.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          1148,
+          148,
+          65
+        ],
+        [
+          131,
+          269,
+          46
+        ],
+        [
+          56,
+          48,
+          230
+        ]
+      ],
+      "model": "cnn",
+      "seed": 44,
+      "checkpoint": "results\\stage5\\cnn_selected_seed44\\cnn_best.pt",
+      "checkpoint_sha256": "3d0245587de3849cfdc72c44aba7f5f450178f5c04b537ebf9f3288c1f635e96",
+      "evaluation_seconds": 0.16591400000470458,
+      "parameters_unchanged": true,
+      "saved_metrics_verified": true
+    },
+    {
+      "accuracy": 0.760859411489958,
+      "macro_f1": 0.6945142505846934,
+      "weighted_f1": 0.7636622806332037,
+      "per_class": {
+        "negative": {
+          "precision": 0.8645357686453576,
+          "recall": 0.8346803820720059,
+          "f1-score": 0.8493457943925233,
+          "support": 1361.0
+        },
+        "neutral": {
+          "precision": 0.5665322580645161,
+          "recall": 0.6300448430493274,
+          "f1-score": 0.5966029723991507,
+          "support": 446.0
+        },
+        "positive": {
+          "precision": 0.6404833836858006,
+          "recall": 0.6347305389221557,
+          "f1-score": 0.637593984962406,
+          "support": 334.0
+        },
+        "accuracy": 0.760859411489958,
+        "macro avg": {
+          "precision": 0.6905171367985581,
+          "recall": 0.6998185880144963,
+          "f1-score": 0.6945142505846934,
+          "support": 2141.0
+        },
+        "weighted avg": {
+          "precision": 0.7675049128323975,
+          "recall": 0.760859411489958,
+          "f1-score": 0.7636622806332037,
+          "support": 2141.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          1136,
+          153,
+          72
+        ],
+        [
+          118,
+          281,
+          47
+        ],
+        [
+          60,
+          62,
+          212
+        ]
+      ],
+      "model": "gru",
+      "seed": 42,
+      "checkpoint": "results\\stage5\\gru_grid3_seed42\\gru_best.pt",
+      "checkpoint_sha256": "99094993caf7058d415b28b0c8ac3f40dbef51a43b60c688fe4e7dfd3d5b17e2",
+      "evaluation_seconds": 0.3119220000007772,
+      "parameters_unchanged": true,
+      "saved_metrics_verified": true
+    },
+    {
+      "accuracy": 0.7426436244745446,
+      "macro_f1": 0.6916940179431877,
+      "weighted_f1": 0.7510789097388455,
+      "per_class": {
+        "negative": {
+          "precision": 0.8777869529314616,
+          "recall": 0.78104335047759,
+          "f1-score": 0.8265940902021773,
+          "support": 1361.0
+        },
+        "neutral": {
+          "precision": 0.512396694214876,
+          "recall": 0.695067264573991,
+          "f1-score": 0.5899143672692674,
+          "support": 446.0
+        },
+        "positive": {
+          "precision": 0.6676923076923077,
+          "recall": 0.6497005988023952,
+          "f1-score": 0.6585735963581184,
+          "support": 334.0
+        },
+        "accuracy": 0.7426436244745446,
+        "macro avg": {
+          "precision": 0.6859586516128817,
+          "recall": 0.7086037379513254,
+          "f1-score": 0.6916940179431877,
+          "support": 2141.0
+        },
+        "weighted avg": {
+          "precision": 0.7688959361647757,
+          "recall": 0.7426436244745446,
+          "f1-score": 0.7510789097388455,
+          "support": 2141.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          1063,
+          232,
+          66
+        ],
+        [
+          94,
+          310,
+          42
+        ],
+        [
+          54,
+          63,
+          217
+        ]
+      ],
+      "model": "gru",
+      "seed": 43,
+      "checkpoint": "results\\stage5\\gru_selected_seed43\\gru_best.pt",
+      "checkpoint_sha256": "476fd4caf903ca1dd2c8f7a75b7150cbd30dcb0e0269e9d32b93740a9091da90",
+      "evaluation_seconds": 0.2793426999996882,
+      "parameters_unchanged": true,
+      "saved_metrics_verified": true
+    },
+    {
+      "accuracy": 0.7585240541802896,
+      "macro_f1": 0.7026852333919654,
+      "weighted_f1": 0.7632694612003553,
+      "per_class": {
+        "negative": {
+          "precision": 0.8702830188679245,
+          "recall": 0.813372520205731,
+          "f1-score": 0.8408659323965059,
+          "support": 1361.0
+        },
+        "neutral": {
+          "precision": 0.5544747081712063,
+          "recall": 0.6390134529147982,
+          "f1-score": 0.59375,
+          "support": 446.0
+        },
+        "positive": {
+          "precision": 0.6535211267605634,
+          "recall": 0.6946107784431138,
+          "f1-score": 0.6734397677793904,
+          "support": 334.0
+        },
+        "accuracy": 0.7585240541802896,
+        "macro avg": {
+          "precision": 0.6927596179332314,
+          "recall": 0.7156655838545477,
+          "f1-score": 0.7026852333919654,
+          "support": 2141.0
+        },
+        "weighted avg": {
+          "precision": 0.7706805067079081,
+          "recall": 0.7585240541802896,
+          "f1-score": 0.7632694612003553,
+          "support": 2141.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          1107,
+          174,
+          80
+        ],
+        [
+          118,
+          285,
+          43
+        ],
+        [
+          47,
+          55,
+          232
+        ]
+      ],
+      "model": "gru",
+      "seed": 44,
+      "checkpoint": "results\\stage5\\gru_selected_seed44\\gru_best.pt",
+      "checkpoint_sha256": "812940155324734f7efe5cc98af7ae9849052ba36bac442fefb4e9f56ae33171",
+      "evaluation_seconds": 0.1735192999985884,
+      "parameters_unchanged": true,
+      "saved_metrics_verified": true
+    }
+  ],
+  "model_summary": [
+    {
+      "model": "cnn",
+      "accuracy_mean": 0.7647516736727386,
+      "accuracy_sample_std": 0.005914189603992708,
+      "macro_f1_mean": 0.7088421996920723,
+      "macro_f1_sample_std": 0.0030178050805181127,
+      "weighted_f1_mean": 0.7686723600548527,
+      "weighted_f1_sample_std": 0.002926036997891989
+    },
+    {
+      "model": "gru",
+      "accuracy_mean": 0.7540090300482639,
+      "accuracy_sample_std": 0.009911750921623552,
+      "macro_f1_mean": 0.6962978339732823,
+      "macro_f1_sample_std": 0.005708553366519375,
+      "weighted_f1_mean": 0.7593368838574682,
+      "weighted_f1_sample_std": 0.0071543119295001
+    }
+  ],
+  "class_order": [
+    "negative",
+    "neutral",
+    "positive"
+  ],
+  "test_rows_per_seed": 2141,
+  "sample_sd_ddof": 1,
+  "aggregation": "mean/sample SD of three seed metrics; no pooled predictions or ensemble",
+  "all_saved_metrics_verified": true,
+  "no_training_or_tuning": true,
+  "previous_artifacts_preserved": true,
+  "evaluation_wall_seconds_before_plots": 3.292751600005431
+}

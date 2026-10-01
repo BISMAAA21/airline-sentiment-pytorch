@@ -1,0 +1,25 @@
+{
+  "all_passed": true,
+  "trial_reload_checks": {
+    "cnn_grid0_seed42": true,
+    "cnn_grid1_seed42": true,
+    "cnn_grid2_seed42": true,
+    "cnn_grid3_seed42": true,
+    "gru_grid0_seed42": true,
+    "gru_grid1_seed42": true,
+    "gru_grid2_seed42": true,
+    "gru_grid3_seed42": true,
+    "cnn_selected_seed43": true,
+    "cnn_selected_seed44": true,
+    "gru_selected_seed43": true,
+    "gru_selected_seed44": true
+  },
+  "grid_trials": 8,
+  "fresh_runs": 10,
+  "reused_baselines": 2,
+  "selection_and_sample_std_verified": true,
+  "six_final_checkpoints_frozen": true,
+  "previous_outputs_preserved": true,
+  "test_evaluated": false,
+  "scope": "train class-count and validation inference verification; no additional training"
+}

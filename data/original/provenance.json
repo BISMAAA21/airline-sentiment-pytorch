@@ -1,0 +1,24 @@
+{
+  "dataset_page": "https://www.kaggle.com/datasets/crowdflower/twitter-airline-sentiment",
+  "download_url": "https://www.kaggle.com/api/v1/datasets/download/crowdflower/twitter-airline-sentiment",
+  "provider": "Kaggle; publisher account crowdflower",
+  "mirror_used": false,
+  "download_date_local": "2026-09-13",
+  "timezone": "Asia/Singapore",
+  "snapshot_version": "Not captured by the download; hashes identify local bytes",
+  "archive_members": [
+    "Tweets.csv",
+    "database.sqlite"
+  ],
+  "extraction": "Tweets.csv read directly from ZIP without reserialisation; database.sqlite retained inside ZIP only",
+  "files": {
+    "Tweets.csv": {
+      "bytes": 3421431,
+      "sha256": "ea94b23f41892b290dec3330bb8cf9cb6b8bc669eaae5f3a84c40f7b0de8f15e"
+    },
+    "twitter-airline-sentiment.zip": {
+      "bytes": 2678605,
+      "sha256": "c0dbee48cac32110a607430dc5c1941a1728383adef20a893ded91adbbba2de2"
+    }
+  }
+}

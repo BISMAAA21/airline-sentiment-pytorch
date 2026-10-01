@@ -1,0 +1,10 @@
+split,sentiment,rows
+train,negative,6348
+train,neutral,2079
+train,positive,1562
+validation,negative,1360
+validation,neutral,446
+validation,positive,335
+test,negative,1361
+test,neutral,446
+test,positive,334

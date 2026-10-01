@@ -1,0 +1,1021 @@
+{
+  "selected": {
+    "cnn": {
+      "best_epoch": 10,
+      "epochs_run": 13,
+      "validation": {
+        "loss": 0.7444517842253147,
+        "accuracy": 0.7641289117234937,
+        "macro_f1": 0.7231493149591405
+      },
+      "training_and_validation_seconds": 34.77048769999965,
+      "parameters": 902019,
+      "checkpoint_sha256": "763bca4a1b6b645c8a3212b3f526c0fb9bdbf446c1c25faf67a66f98a2c3553f",
+      "reload_predictions_exact": true,
+      "reload_logits_exact": true,
+      "pad_zero": true,
+      "unk_updated_during_training": true,
+      "per_class": {
+        "negative": {
+          "precision": 0.8984771573604061,
+          "recall": 0.7808823529411765,
+          "f1-score": 0.8355625491738788,
+          "support": 1360.0
+        },
+        "neutral": {
+          "precision": 0.5510887772194305,
+          "recall": 0.7376681614349776,
+          "f1-score": 0.6308724832214765,
+          "support": 446.0
+        },
+        "positive": {
+          "precision": 0.6767955801104972,
+          "recall": 0.7313432835820896,
+          "f1-score": 0.703012912482066,
+          "support": 335.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          1062,
+          220,
+          78
+        ],
+        [
+          78,
+          329,
+          39
+        ],
+        [
+          42,
+          48,
+          245
+        ]
+      ],
+      "kind": "cnn",
+      "learning_rate": 0.001,
+      "dropout": 0.3,
+      "seed": 42,
+      "reused_baseline": true,
+      "directory": "results\\stage5\\cnn_grid0_seed42",
+      "stage5_training_seconds": 0.0,
+      "grid_index": 0
+    },
+    "gru": {
+      "best_epoch": 11,
+      "epochs_run": 14,
+      "validation": {
+        "loss": 0.8290163025333265,
+        "accuracy": 0.7706679121905652,
+        "macro_f1": 0.7181111223744626
+      },
+      "training_and_validation_seconds": 96.84333119999792,
+      "parameters": 914627,
+      "checkpoint_sha256": "99094993caf7058d415b28b0c8ac3f40dbef51a43b60c688fe4e7dfd3d5b17e2",
+      "reload_predictions_exact": true,
+      "reload_logits_exact": true,
+      "pad_zero": true,
+      "unk_updated_during_training": true,
+      "per_class": {
+        "negative": {
+          "precision": 0.8807266982622433,
+          "recall": 0.8198529411764706,
+          "f1-score": 0.8492003046458492,
+          "support": 1360.0
+        },
+        "neutral": {
+          "precision": 0.5615942028985508,
+          "recall": 0.695067264573991,
+          "f1-score": 0.6212424849699398,
+          "support": 446.0
+        },
+        "positive": {
+          "precision": 0.6965944272445821,
+          "recall": 0.6716417910447762,
+          "f1-score": 0.6838905775075987,
+          "support": 335.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          1115,
+          184,
+          61
+        ],
+        [
+          99,
+          310,
+          37
+        ],
+        [
+          52,
+          58,
+          225
+        ]
+      ],
+      "kind": "gru",
+      "learning_rate": 0.0005,
+      "dropout": 0.5,
+      "seed": 42,
+      "reused_baseline": false,
+      "initial_embedding_sha256": "8af917c9a7a6fecd550c29ba6910f222e805073ea6652d50bdcdf26c701f7bde",
+      "directory": "results\\stage5\\gru_grid3_seed42",
+      "grid_index": 3
+    }
+  },
+  "variability": {
+    "cnn": {
+      "seeds": [
+        42,
+        43,
+        44
+      ],
+      "validation_macro_f1": [
+        0.7231493149591405,
+        0.7221787664535192,
+        0.736486305428377
+      ],
+      "mean": 0.7272714622803456,
+      "sample_std": 0.007995029192101648
+    },
+    "gru": {
+      "seeds": [
+        42,
+        43,
+        44
+      ],
+      "validation_macro_f1": [
+        0.7181111223744626,
+        0.7131657657406286,
+        0.7124304162528222
+      ],
+      "mean": 0.7145691014559712,
+      "sample_std": 0.0030894366569938973
+    }
+  },
+  "grid_trials": [
+    {
+      "best_epoch": 10,
+      "epochs_run": 13,
+      "validation": {
+        "loss": 0.7444517842253147,
+        "accuracy": 0.7641289117234937,
+        "macro_f1": 0.7231493149591405
+      },
+      "training_and_validation_seconds": 34.77048769999965,
+      "parameters": 902019,
+      "checkpoint_sha256": "763bca4a1b6b645c8a3212b3f526c0fb9bdbf446c1c25faf67a66f98a2c3553f",
+      "reload_predictions_exact": true,
+      "reload_logits_exact": true,
+      "pad_zero": true,
+      "unk_updated_during_training": true,
+      "per_class": {
+        "negative": {
+          "precision": 0.8984771573604061,
+          "recall": 0.7808823529411765,
+          "f1-score": 0.8355625491738788,
+          "support": 1360.0
+        },
+        "neutral": {
+          "precision": 0.5510887772194305,
+          "recall": 0.7376681614349776,
+          "f1-score": 0.6308724832214765,
+          "support": 446.0
+        },
+        "positive": {
+          "precision": 0.6767955801104972,
+          "recall": 0.7313432835820896,
+          "f1-score": 0.703012912482066,
+          "support": 335.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          1062,
+          220,
+          78
+        ],
+        [
+          78,
+          329,
+          39
+        ],
+        [
+          42,
+          48,
+          245
+        ]
+      ],
+      "kind": "cnn",
+      "learning_rate": 0.001,
+      "dropout": 0.3,
+      "seed": 42,
+      "reused_baseline": true,
+      "directory": "results\\stage5\\cnn_grid0_seed42",
+      "stage5_training_seconds": 0.0,
+      "grid_index": 0
+    },
+    {
+      "best_epoch": 11,
+      "epochs_run": 14,
+      "validation": {
+        "loss": 0.7555884682782273,
+        "accuracy": 0.7706679121905652,
+        "macro_f1": 0.719461081868766
+      },
+      "training_and_validation_seconds": 35.72356559999753,
+      "parameters": 902019,
+      "checkpoint_sha256": "e73006c7026aa65ec54f10e4d421b128c47e35364c14837882d5af6a92147072",
+      "reload_predictions_exact": true,
+      "reload_logits_exact": true,
+      "pad_zero": true,
+      "unk_updated_during_training": true,
+      "per_class": {
+        "negative": {
+          "precision": 0.8779527559055118,
+          "recall": 0.8198529411764706,
+          "f1-score": 0.8479087452471483,
+          "support": 1360.0
+        },
+        "neutral": {
+          "precision": 0.5673076923076923,
+          "recall": 0.6614349775784754,
+          "f1-score": 0.6107660455486542,
+          "support": 446.0
+        },
+        "positive": {
+          "precision": 0.6837606837606838,
+          "recall": 0.7164179104477612,
+          "f1-score": 0.6997084548104956,
+          "support": 335.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          1115,
+          180,
+          65
+        ],
+        [
+          105,
+          295,
+          46
+        ],
+        [
+          50,
+          45,
+          240
+        ]
+      ],
+      "kind": "cnn",
+      "learning_rate": 0.001,
+      "dropout": 0.5,
+      "seed": 42,
+      "reused_baseline": false,
+      "initial_embedding_sha256": "8af917c9a7a6fecd550c29ba6910f222e805073ea6652d50bdcdf26c701f7bde",
+      "directory": "results\\stage5\\cnn_grid1_seed42",
+      "grid_index": 1
+    },
+    {
+      "best_epoch": 15,
+      "epochs_run": 18,
+      "validation": {
+        "loss": 0.7133201306778142,
+        "accuracy": 0.7678654834189631,
+        "macro_f1": 0.71647538905087
+      },
+      "training_and_validation_seconds": 52.77433049999672,
+      "parameters": 902019,
+      "checkpoint_sha256": "f5b54b1a4982ed673d15403a780702eaf65a8ab4b1d88033d5d99a82bbac55bd",
+      "reload_predictions_exact": true,
+      "reload_logits_exact": true,
+      "pad_zero": true,
+      "unk_updated_during_training": true,
+      "per_class": {
+        "negative": {
+          "precision": 0.8740157480314961,
+          "recall": 0.8161764705882353,
+          "f1-score": 0.844106463878327,
+          "support": 1360.0
+        },
+        "neutral": {
+          "precision": 0.5682242990654206,
+          "recall": 0.6816143497757847,
+          "f1-score": 0.6197757390417941,
+          "support": 446.0
+        },
+        "positive": {
+          "precision": 0.6845238095238095,
+          "recall": 0.6865671641791045,
+          "f1-score": 0.6855439642324889,
+          "support": 335.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          1110,
+          184,
+          66
+        ],
+        [
+          102,
+          304,
+          40
+        ],
+        [
+          58,
+          47,
+          230
+        ]
+      ],
+      "kind": "cnn",
+      "learning_rate": 0.0005,
+      "dropout": 0.3,
+      "seed": 42,
+      "reused_baseline": false,
+      "initial_embedding_sha256": "8af917c9a7a6fecd550c29ba6910f222e805073ea6652d50bdcdf26c701f7bde",
+      "directory": "results\\stage5\\cnn_grid2_seed42",
+      "grid_index": 2
+    },
+    {
+      "best_epoch": 4,
+      "epochs_run": 7,
+      "validation": {
+        "loss": 0.7829019210185492,
+        "accuracy": 0.7216254086875292,
+        "macro_f1": 0.6589582447607715
+      },
+      "training_and_validation_seconds": 26.180479800001194,
+      "parameters": 902019,
+      "checkpoint_sha256": "19143c931c43ff03cd544fe5e39879b0e1e97d97dd322ad56cb7a33be5c219ad",
+      "reload_predictions_exact": true,
+      "reload_logits_exact": true,
+      "pad_zero": true,
+      "unk_updated_during_training": true,
+      "per_class": {
+        "negative": {
+          "precision": 0.841106719367589,
+          "recall": 0.7823529411764706,
+          "f1-score": 0.8106666666666666,
+          "support": 1360.0
+        },
+        "neutral": {
+          "precision": 0.546236559139785,
+          "recall": 0.5695067264573991,
+          "f1-score": 0.557628979143798,
+          "support": 446.0
+        },
+        "positive": {
+          "precision": 0.5523114355231143,
+          "recall": 0.6776119402985075,
+          "f1-score": 0.6085790884718498,
+          "support": 335.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          1064,
+          176,
+          120
+        ],
+        [
+          128,
+          254,
+          64
+        ],
+        [
+          73,
+          35,
+          227
+        ]
+      ],
+      "kind": "cnn",
+      "learning_rate": 0.0005,
+      "dropout": 0.5,
+      "seed": 42,
+      "reused_baseline": false,
+      "initial_embedding_sha256": "8af917c9a7a6fecd550c29ba6910f222e805073ea6652d50bdcdf26c701f7bde",
+      "directory": "results\\stage5\\cnn_grid3_seed42",
+      "grid_index": 3
+    },
+    {
+      "best_epoch": 4,
+      "epochs_run": 7,
+      "validation": {
+        "loss": 0.681887862409009,
+        "accuracy": 0.759458197104157,
+        "macro_f1": 0.7113049307687738
+      },
+      "training_and_validation_seconds": 38.79059959999722,
+      "parameters": 914627,
+      "checkpoint_sha256": "076dd62489d0eb4d28d3b72d5d613fc7d70cd3c968b70fae5f012d3f22841e42",
+      "reload_predictions_exact": true,
+      "reload_logits_exact": true,
+      "pad_zero": true,
+      "unk_updated_during_training": true,
+      "per_class": {
+        "negative": {
+          "precision": 0.8963210702341137,
+          "recall": 0.788235294117647,
+          "f1-score": 0.838810641627543,
+          "support": 1360.0
+        },
+        "neutral": {
+          "precision": 0.5406301824212272,
+          "recall": 0.7309417040358744,
+          "f1-score": 0.6215443279313632,
+          "support": 446.0
+        },
+        "positive": {
+          "precision": 0.6666666666666666,
+          "recall": 0.6805970149253732,
+          "f1-score": 0.6735598227474151,
+          "support": 335.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          1072,
+          219,
+          69
+        ],
+        [
+          75,
+          326,
+          45
+        ],
+        [
+          49,
+          58,
+          228
+        ]
+      ],
+      "kind": "gru",
+      "learning_rate": 0.001,
+      "dropout": 0.3,
+      "seed": 42,
+      "reused_baseline": true,
+      "directory": "results\\stage5\\gru_grid0_seed42",
+      "stage5_training_seconds": 0.0,
+      "grid_index": 0
+    },
+    {
+      "best_epoch": 4,
+      "epochs_run": 7,
+      "validation": {
+        "loss": 0.6917055049736882,
+        "accuracy": 0.7538533395609528,
+        "macro_f1": 0.7037595496760333
+      },
+      "training_and_validation_seconds": 57.035204499996325,
+      "parameters": 914627,
+      "checkpoint_sha256": "9ae3e593cd168ba4b5d326c68599d267f3f30862896aca716e884535078f8fe1",
+      "reload_predictions_exact": true,
+      "reload_logits_exact": true,
+      "pad_zero": true,
+      "unk_updated_during_training": true,
+      "per_class": {
+        "negative": {
+          "precision": 0.8967254408060453,
+          "recall": 0.7852941176470588,
+          "f1-score": 0.8373186985495884,
+          "support": 1360.0
+        },
+        "neutral": {
+          "precision": 0.5270049099836334,
+          "recall": 0.7219730941704036,
+          "f1-score": 0.609271523178808,
+          "support": 446.0
+        },
+        "positive": {
+          "precision": 0.6607669616519174,
+          "recall": 0.6686567164179105,
+          "f1-score": 0.6646884272997032,
+          "support": 335.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          1068,
+          224,
+          68
+        ],
+        [
+          77,
+          322,
+          47
+        ],
+        [
+          46,
+          65,
+          224
+        ]
+      ],
+      "kind": "gru",
+      "learning_rate": 0.001,
+      "dropout": 0.5,
+      "seed": 42,
+      "reused_baseline": false,
+      "initial_embedding_sha256": "8af917c9a7a6fecd550c29ba6910f222e805073ea6652d50bdcdf26c701f7bde",
+      "directory": "results\\stage5\\gru_grid1_seed42",
+      "grid_index": 1
+    },
+    {
+      "best_epoch": 9,
+      "epochs_run": 12,
+      "validation": {
+        "loss": 0.7218584461417771,
+        "accuracy": 0.7627276973376926,
+        "macro_f1": 0.710481572150044
+      },
+      "training_and_validation_seconds": 93.12305609999748,
+      "parameters": 914627,
+      "checkpoint_sha256": "d7523ec32e7073db22ae416bc26eebed3122c807e07a3d41a479df6f73904256",
+      "reload_predictions_exact": true,
+      "reload_logits_exact": true,
+      "pad_zero": true,
+      "unk_updated_during_training": true,
+      "per_class": {
+        "negative": {
+          "precision": 0.8867313915857605,
+          "recall": 0.8058823529411765,
+          "f1-score": 0.8443759630200308,
+          "support": 1360.0
+        },
+        "neutral": {
+          "precision": 0.5499092558983666,
+          "recall": 0.679372197309417,
+          "f1-score": 0.6078234704112337,
+          "support": 446.0
+        },
+        "positive": {
+          "precision": 0.6610169491525424,
+          "recall": 0.6985074626865672,
+          "f1-score": 0.6792452830188679,
+          "support": 335.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          1096,
+          191,
+          73
+        ],
+        [
+          96,
+          303,
+          47
+        ],
+        [
+          44,
+          57,
+          234
+        ]
+      ],
+      "kind": "gru",
+      "learning_rate": 0.0005,
+      "dropout": 0.3,
+      "seed": 42,
+      "reused_baseline": false,
+      "initial_embedding_sha256": "8af917c9a7a6fecd550c29ba6910f222e805073ea6652d50bdcdf26c701f7bde",
+      "directory": "results\\stage5\\gru_grid2_seed42",
+      "grid_index": 2
+    },
+    {
+      "best_epoch": 11,
+      "epochs_run": 14,
+      "validation": {
+        "loss": 0.8290163025333265,
+        "accuracy": 0.7706679121905652,
+        "macro_f1": 0.7181111223744626
+      },
+      "training_and_validation_seconds": 96.84333119999792,
+      "parameters": 914627,
+      "checkpoint_sha256": "99094993caf7058d415b28b0c8ac3f40dbef51a43b60c688fe4e7dfd3d5b17e2",
+      "reload_predictions_exact": true,
+      "reload_logits_exact": true,
+      "pad_zero": true,
+      "unk_updated_during_training": true,
+      "per_class": {
+        "negative": {
+          "precision": 0.8807266982622433,
+          "recall": 0.8198529411764706,
+          "f1-score": 0.8492003046458492,
+          "support": 1360.0
+        },
+        "neutral": {
+          "precision": 0.5615942028985508,
+          "recall": 0.695067264573991,
+          "f1-score": 0.6212424849699398,
+          "support": 446.0
+        },
+        "positive": {
+          "precision": 0.6965944272445821,
+          "recall": 0.6716417910447762,
+          "f1-score": 0.6838905775075987,
+          "support": 335.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          1115,
+          184,
+          61
+        ],
+        [
+          99,
+          310,
+          37
+        ],
+        [
+          52,
+          58,
+          225
+        ]
+      ],
+      "kind": "gru",
+      "learning_rate": 0.0005,
+      "dropout": 0.5,
+      "seed": 42,
+      "reused_baseline": false,
+      "initial_embedding_sha256": "8af917c9a7a6fecd550c29ba6910f222e805073ea6652d50bdcdf26c701f7bde",
+      "directory": "results\\stage5\\gru_grid3_seed42",
+      "grid_index": 3
+    }
+  ],
+  "seed_runs": {
+    "cnn": [
+      {
+        "best_epoch": 10,
+        "epochs_run": 13,
+        "validation": {
+          "loss": 0.7444517842253147,
+          "accuracy": 0.7641289117234937,
+          "macro_f1": 0.7231493149591405
+        },
+        "training_and_validation_seconds": 34.77048769999965,
+        "parameters": 902019,
+        "checkpoint_sha256": "763bca4a1b6b645c8a3212b3f526c0fb9bdbf446c1c25faf67a66f98a2c3553f",
+        "reload_predictions_exact": true,
+        "reload_logits_exact": true,
+        "pad_zero": true,
+        "unk_updated_during_training": true,
+        "per_class": {
+          "negative": {
+            "precision": 0.8984771573604061,
+            "recall": 0.7808823529411765,
+            "f1-score": 0.8355625491738788,
+            "support": 1360.0
+          },
+          "neutral": {
+            "precision": 0.5510887772194305,
+            "recall": 0.7376681614349776,
+            "f1-score": 0.6308724832214765,
+            "support": 446.0
+          },
+          "positive": {
+            "precision": 0.6767955801104972,
+            "recall": 0.7313432835820896,
+            "f1-score": 0.703012912482066,
+            "support": 335.0
+          }
+        },
+        "confusion_matrix": [
+          [
+            1062,
+            220,
+            78
+          ],
+          [
+            78,
+            329,
+            39
+          ],
+          [
+            42,
+            48,
+            245
+          ]
+        ],
+        "kind": "cnn",
+        "learning_rate": 0.001,
+        "dropout": 0.3,
+        "seed": 42,
+        "reused_baseline": true,
+        "directory": "results\\stage5\\cnn_grid0_seed42",
+        "stage5_training_seconds": 0.0,
+        "grid_index": 0
+      },
+      {
+        "best_epoch": 11,
+        "epochs_run": 14,
+        "validation": {
+          "loss": 0.7448386549156554,
+          "accuracy": 0.7716020551144325,
+          "macro_f1": 0.7221787664535192
+        },
+        "training_and_validation_seconds": 37.80185329999949,
+        "parameters": 902019,
+        "checkpoint_sha256": "7061a91516fb7fbd2c7d31b6837c5fc34b523f652803a0eef101739508f5e03c",
+        "reload_predictions_exact": true,
+        "reload_logits_exact": true,
+        "pad_zero": true,
+        "unk_updated_during_training": true,
+        "per_class": {
+          "negative": {
+            "precision": 0.8848920863309353,
+            "recall": 0.8139705882352941,
+            "f1-score": 0.8479509766373037,
+            "support": 1360.0
+          },
+          "neutral": {
+            "precision": 0.5689981096408318,
+            "recall": 0.6748878923766816,
+            "f1-score": 0.6174358974358974,
+            "support": 446.0
+          },
+          "positive": {
+            "precision": 0.6759002770083102,
+            "recall": 0.7283582089552239,
+            "f1-score": 0.7011494252873564,
+            "support": 335.0
+          }
+        },
+        "confusion_matrix": [
+          [
+            1107,
+            183,
+            70
+          ],
+          [
+            98,
+            301,
+            47
+          ],
+          [
+            46,
+            45,
+            244
+          ]
+        ],
+        "kind": "cnn",
+        "learning_rate": 0.001,
+        "dropout": 0.3,
+        "seed": 43,
+        "reused_baseline": false,
+        "initial_embedding_sha256": "231b0ed685fdb37ae092af01dd049f395d3fee38f362973af45be3a6b43c5d06",
+        "directory": "results\\stage5\\cnn_selected_seed43"
+      },
+      {
+        "best_epoch": 14,
+        "epochs_run": 17,
+        "validation": {
+          "loss": 0.8720470155110107,
+          "accuracy": 0.7893507706679121,
+          "macro_f1": 0.736486305428377
+        },
+        "training_and_validation_seconds": 52.95335879999766,
+        "parameters": 902019,
+        "checkpoint_sha256": "3d0245587de3849cfdc72c44aba7f5f450178f5c04b537ebf9f3288c1f635e96",
+        "reload_predictions_exact": true,
+        "reload_logits_exact": true,
+        "pad_zero": true,
+        "unk_updated_during_training": true,
+        "per_class": {
+          "negative": {
+            "precision": 0.871331828442438,
+            "recall": 0.8514705882352941,
+            "f1-score": 0.8612867236891038,
+            "support": 1360.0
+          },
+          "neutral": {
+            "precision": 0.6180257510729614,
+            "recall": 0.6457399103139013,
+            "f1-score": 0.631578947368421,
+            "support": 446.0
+          },
+          "positive": {
+            "precision": 0.7052023121387283,
+            "recall": 0.7283582089552239,
+            "f1-score": 0.7165932452276065,
+            "support": 335.0
+          }
+        },
+        "confusion_matrix": [
+          [
+            1158,
+            139,
+            63
+          ],
+          [
+            119,
+            288,
+            39
+          ],
+          [
+            52,
+            39,
+            244
+          ]
+        ],
+        "kind": "cnn",
+        "learning_rate": 0.001,
+        "dropout": 0.3,
+        "seed": 44,
+        "reused_baseline": false,
+        "initial_embedding_sha256": "cdfeea94e8b801fba93b0b312e114787d702edd1fdf03e8870571c44e303ce8b",
+        "directory": "results\\stage5\\cnn_selected_seed44"
+      }
+    ],
+    "gru": [
+      {
+        "best_epoch": 11,
+        "epochs_run": 14,
+        "validation": {
+          "loss": 0.8290163025333265,
+          "accuracy": 0.7706679121905652,
+          "macro_f1": 0.7181111223744626
+        },
+        "training_and_validation_seconds": 96.84333119999792,
+        "parameters": 914627,
+        "checkpoint_sha256": "99094993caf7058d415b28b0c8ac3f40dbef51a43b60c688fe4e7dfd3d5b17e2",
+        "reload_predictions_exact": true,
+        "reload_logits_exact": true,
+        "pad_zero": true,
+        "unk_updated_during_training": true,
+        "per_class": {
+          "negative": {
+            "precision": 0.8807266982622433,
+            "recall": 0.8198529411764706,
+            "f1-score": 0.8492003046458492,
+            "support": 1360.0
+          },
+          "neutral": {
+            "precision": 0.5615942028985508,
+            "recall": 0.695067264573991,
+            "f1-score": 0.6212424849699398,
+            "support": 446.0
+          },
+          "positive": {
+            "precision": 0.6965944272445821,
+            "recall": 0.6716417910447762,
+            "f1-score": 0.6838905775075987,
+            "support": 335.0
+          }
+        },
+        "confusion_matrix": [
+          [
+            1115,
+            184,
+            61
+          ],
+          [
+            99,
+            310,
+            37
+          ],
+          [
+            52,
+            58,
+            225
+          ]
+        ],
+        "kind": "gru",
+        "learning_rate": 0.0005,
+        "dropout": 0.5,
+        "seed": 42,
+        "reused_baseline": false,
+        "initial_embedding_sha256": "8af917c9a7a6fecd550c29ba6910f222e805073ea6652d50bdcdf26c701f7bde",
+        "directory": "results\\stage5\\gru_grid3_seed42",
+        "grid_index": 3
+      },
+      {
+        "best_epoch": 9,
+        "epochs_run": 12,
+        "validation": {
+          "loss": 0.7246751740650607,
+          "accuracy": 0.760859411489958,
+          "macro_f1": 0.7131657657406286
+        },
+        "training_and_validation_seconds": 70.97819080000045,
+        "parameters": 914627,
+        "checkpoint_sha256": "476fd4caf903ca1dd2c8f7a75b7150cbd30dcb0e0269e9d32b93740a9091da90",
+        "reload_predictions_exact": true,
+        "reload_logits_exact": true,
+        "pad_zero": true,
+        "unk_updated_during_training": true,
+        "per_class": {
+          "negative": {
+            "precision": 0.9040404040404041,
+            "recall": 0.7897058823529411,
+            "f1-score": 0.8430141287284144,
+            "support": 1360.0
+          },
+          "neutral": {
+            "precision": 0.5297029702970297,
+            "recall": 0.7197309417040358,
+            "f1-score": 0.6102661596958175,
+            "support": 446.0
+          },
+          "positive": {
+            "precision": 0.6743515850144092,
+            "recall": 0.6985074626865672,
+            "f1-score": 0.6862170087976539,
+            "support": 335.0
+          }
+        },
+        "confusion_matrix": [
+          [
+            1074,
+            220,
+            66
+          ],
+          [
+            78,
+            321,
+            47
+          ],
+          [
+            36,
+            65,
+            234
+          ]
+        ],
+        "kind": "gru",
+        "learning_rate": 0.0005,
+        "dropout": 0.5,
+        "seed": 43,
+        "reused_baseline": false,
+        "initial_embedding_sha256": "231b0ed685fdb37ae092af01dd049f395d3fee38f362973af45be3a6b43c5d06",
+        "directory": "results\\stage5\\gru_selected_seed43"
+      },
+      {
+        "best_epoch": 10,
+        "epochs_run": 13,
+        "validation": {
+          "loss": 0.8319164266406484,
+          "accuracy": 0.7669313404950957,
+          "macro_f1": 0.7124304162528222
+        },
+        "training_and_validation_seconds": 75.68265989999782,
+        "parameters": 914627,
+        "checkpoint_sha256": "812940155324734f7efe5cc98af7ae9849052ba36bac442fefb4e9f56ae33171",
+        "reload_predictions_exact": true,
+        "reload_logits_exact": true,
+        "pad_zero": true,
+        "unk_updated_during_training": true,
+        "per_class": {
+          "negative": {
+            "precision": 0.8622016936104696,
+            "recall": 0.8235294117647058,
+            "f1-score": 0.8424219631440392,
+            "support": 1360.0
+          },
+          "neutral": {
+            "precision": 0.5934291581108829,
+            "recall": 0.647982062780269,
+            "f1-score": 0.6195069667738478,
+            "support": 446.0
+          },
+          "positive": {
+            "precision": 0.6563380281690141,
+            "recall": 0.6955223880597015,
+            "f1-score": 0.6753623188405797,
+            "support": 335.0
+          }
+        },
+        "confusion_matrix": [
+          [
+            1120,
+            161,
+            79
+          ],
+          [
+            114,
+            289,
+            43
+          ],
+          [
+            65,
+            37,
+            233
+          ]
+        ],
+        "kind": "gru",
+        "learning_rate": 0.0005,
+        "dropout": 0.5,
+        "seed": 44,
+        "reused_baseline": false,
+        "initial_embedding_sha256": "cdfeea94e8b801fba93b0b312e114787d702edd1fdf03e8870571c44e303ce8b",
+        "directory": "results\\stage5\\gru_selected_seed44"
+      }
+    ]
+  },
+  "new_training_validation_seconds": 599.0960304999826,
+  "stage5_wall_seconds_before_plots": 603.6008882000024,
+  "baseline_training_not_repeated": true,
+  "same_order_and_masking_verified": true,
+  "all_reload_checks_exact": true,
+  "test_evaluated": false,
+  "previous_outputs_preserved": true
+}

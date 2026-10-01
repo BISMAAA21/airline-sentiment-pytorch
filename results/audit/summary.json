@@ -1,0 +1,102 @@
+{
+  "raw_sha256": "ea94b23f41892b290dec3330bb8cf9cb6b8bc669eaae5f3a84c40f7b0de8f15e",
+  "starting_count": 14640,
+  "initial_checks": {
+    "tweet_id": {
+      "groups": 155,
+      "rows_in_groups": 310,
+      "excess_rows": 155,
+      "conflicting_label_groups": 18
+    },
+    "raw_text": {
+      "groups": 187,
+      "rows_in_groups": 400,
+      "excess_rows": 213,
+      "conflicting_label_groups": 25
+    },
+    "normalised_text": {
+      "groups": 189,
+      "rows_in_groups": 405,
+      "excess_rows": 216,
+      "conflicting_label_groups": 26
+    },
+    "blank_text": 0,
+    "invalid_label": 0,
+    "blank_tweet_id": 0,
+    "non_decimal_nonblank_tweet_id": 0
+  },
+  "conflicting_components": 26,
+  "removal_ledger": [
+    {
+      "step": "blank_or_missing_text",
+      "before": 14640,
+      "removed": 0,
+      "remaining": 14640
+    },
+    {
+      "step": "invalid_or_missing_label",
+      "before": 14640,
+      "removed": 0,
+      "remaining": 14640
+    },
+    {
+      "step": "quarantine_conflicting_label_components",
+      "before": 14640,
+      "removed": 59,
+      "remaining": 14581
+    },
+    {
+      "step": "quarantine_inconsistent_id_text_components",
+      "before": 14581,
+      "removed": 0,
+      "remaining": 14581
+    },
+    {
+      "step": "duplicate_tweet_id_keep_first_source_row",
+      "before": 14581,
+      "removed": 137,
+      "remaining": 14444
+    },
+    {
+      "step": "duplicate_normalised_text_keep_first_source_row",
+      "before": 14444,
+      "removed": 46,
+      "remaining": 14398
+    }
+  ],
+  "final_count": 14398,
+  "at_least_10000": true,
+  "class_distribution": [
+    {
+      "sentiment": "negative",
+      "starting": 9178,
+      "final": 9079,
+      "final_percent": 63.0574
+    },
+    {
+      "sentiment": "neutral",
+      "starting": 3099,
+      "final": 3044,
+      "final_percent": 21.1418
+    },
+    {
+      "sentiment": "positive",
+      "starting": 2363,
+      "final": 2275,
+      "final_percent": 15.8008
+    }
+  ],
+  "count_investigation": {
+    "all_original_rows": 14640,
+    "unique_raw_tweet_id": 14485,
+    "unique_raw_text": 14427,
+    "unique_NFC_whitespace_text": 14424,
+    "unique_NFC_whitespace_casefold_text": 14406,
+    "chosen_policy_final": 14398,
+    "previous_claim": 14250,
+    "previous_claim_status": "No prior notebook or rules provided. These diagnostics do not establish provenance for 14,250."
+  },
+  "final_confidence_below_1": 4111,
+  "final_confidence_missing_or_nonnumeric": 0,
+  "final_confidence_outside_0_1": 0
+}

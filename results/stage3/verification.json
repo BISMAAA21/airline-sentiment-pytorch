@@ -1,0 +1,213 @@
+{
+  "executed_utc": "2026-09-13T14:16:34.431679+00:00",
+  "environment": {
+    "python": "3.13.7",
+    "torch": "2.14.0+cpu",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "processor": "Intel64 Family 6 Model 186 Stepping 2, GenuineIntel",
+    "device": "cpu",
+    "threads": 2
+  },
+  "masking": {
+    "probability": 0.02,
+    "eligible_training_positions": 162393,
+    "masked_positions_epoch0": 3261,
+    "observed_fraction": 0.020080914817756923,
+    "protected_policy": "reserved IDs, negation/nt contractions, punctuation, emojis",
+    "seed": 42,
+    "scope": "training only; same stateless policy for both models"
+  },
+  "models": {
+    "cnn": {
+      "parameters": 902019,
+      "fixed_pad_entries": 64,
+      "parameter_bytes_float32": 3608076,
+      "padding_max_abs_difference": 0.0,
+      "unk_gradient_norm": 0.017476288601756096,
+      "unk_update_norm": 0.007999728433787823,
+      "overfit_diagnostic": {
+        "rows": 24,
+        "class_counts": [
+          8,
+          8,
+          8
+        ],
+        "maximum_steps": 100,
+        "steps": 5,
+        "initial_loss": 1.1168770790100098,
+        "final_loss": 0.039645206183195114,
+        "training_subset_accuracy": 1.0,
+        "learning_rate": 0.01,
+        "dropout_and_masking": false,
+        "diagnostic_only": true,
+        "curve": [
+          {
+            "step": 5,
+            "loss": 0.039645206183195114,
+            "accuracy": 1.0
+          }
+        ]
+      },
+      "cpu_timing": {
+        "warmup_batches": 5,
+        "timed_batches": 20,
+        "batch_size": 32,
+        "threads": 2,
+        "loader_workers": 0,
+        "dtype": "float32",
+        "batch_seconds": [
+          0.014819900003203657,
+          0.03907370000524679,
+          0.009175899998808745,
+          0.009562300001562107,
+          0.008283999995910563,
+          0.01142989999789279,
+          0.010020499998063315,
+          0.010140800004592165,
+          0.012493200003518723,
+          0.009144599993305746,
+          0.01066930000524735,
+          0.011867499997606501,
+          0.008610900003986899,
+          0.012758400000166148,
+          0.013028399996983353,
+          0.009074300003703684,
+          0.012077899998985231,
+          0.014527899998938665,
+          0.017681199999060482,
+          0.021048700000392273
+        ],
+        "mean_batch_seconds": 0.013274465000358759,
+        "median_batch_seconds": 0.011648699997749645,
+        "minimum_batch_seconds": 0.008283999995910563,
+        "maximum_batch_seconds": 0.03907370000524679,
+        "estimated_313_batch_training_epoch_seconds": 4.154907545112292,
+        "estimate_excludes": "validation, checkpoints, startup; short sample subject to CPU load and length variation",
+        "masked_positions_25_batches": 241
+      }
+    },
+    "gru": {
+      "parameters": 914627,
+      "fixed_pad_entries": 64,
+      "parameter_bytes_float32": 3658508,
+      "padding_max_abs_difference": 0.0,
+      "unk_gradient_norm": 0.004214924294501543,
+      "unk_update_norm": 0.0079994210973382,
+      "overfit_diagnostic": {
+        "rows": 24,
+        "class_counts": [
+          8,
+          8,
+          8
+        ],
+        "maximum_steps": 100,
+        "steps": 10,
+        "initial_loss": 1.1024924516677856,
+        "final_loss": 0.0013258064864203334,
+        "training_subset_accuracy": 1.0,
+        "learning_rate": 0.01,
+        "dropout_and_masking": false,
+        "diagnostic_only": true,
+        "curve": [
+          {
+            "step": 5,
+            "loss": 0.0826701894402504,
+            "accuracy": 1.0
+          },
+          {
+            "step": 10,
+            "loss": 0.0013258064864203334,
+            "accuracy": 1.0
+          }
+        ]
+      },
+      "cpu_timing": {
+        "warmup_batches": 5,
+        "timed_batches": 20,
+        "batch_size": 32,
+        "threads": 2,
+        "loader_workers": 0,
+        "dtype": "float32",
+        "batch_seconds": [
+          0.020214299998770002,
+          0.03154930000164313,
+          0.029632100005983375,
+          0.03211499999451917,
+          0.03045929999643704,
+          0.026583500002743676,
+          0.027614400001766626,
+          0.027084900000772905,
+          0.02164660000562435,
+          0.02280619999510236,
+          0.027383000000554603,
+          0.034396600000036415,
+          0.030969999999797437,
+          0.020670599995355587,
+          0.02306210000097053,
+          0.025064900000870693,
+          0.02127479999762727,
+          0.026886199993896298,
+          0.02243389999784995,
+          0.026164900002186187
+        ],
+        "mean_batch_seconds": 0.02640062999962538,
+        "median_batch_seconds": 0.026734849998319987,
+        "minimum_batch_seconds": 0.020214299998770002,
+        "maximum_batch_seconds": 0.034396600000036415,
+        "estimated_313_batch_training_epoch_seconds": 8.263397189882744,
+        "estimate_excludes": "validation, checkpoints, startup; short sample subject to CPU load and length variation",
+        "masked_positions_25_batches": 241
+      }
+    }
+  },
+  "checks": {
+    "mask_input_unchanged": true,
+    "protected_tokens_unchanged": true,
+    "mask_exposure_positive": true,
+    "mask_reproducible": true,
+    "mask_batch_order_independent": true,
+    "masking_disabled_validation_True": true,
+    "masking_disabled_test_True": true,
+    "masking_disabled_train_False": true,
+    "explicit_protected_negation_punctuation_emoji": true,
+    "cnn_parameter_count": true,
+    "cnn_short_mixed_shape_finite": true,
+    "cnn_extra_padding_invariant": true,
+    "cnn_batch_composition_invariant": true,
+    "cnn_empty_input_rejected": true,
+    "cnn_finite_loss_gradients": true,
+    "cnn_unk_nonzero_gradient": true,
+    "cnn_pad_zero_gradient": true,
+    "cnn_unk_updated": true,
+    "cnn_head_updated": true,
+    "cnn_pad_stays_zero": true,
+    "cnn_tiny_subset_learns": true,
+    "cnn_pad_zero_after_overfit": true,
+    "cnn_runtime_loss_finite": true,
+    "cnn_pad_zero_after_runtime": true,
+    "gru_parameter_count": true,
+    "gru_short_mixed_shape_finite": true,
+    "gru_extra_padding_invariant": true,
+    "gru_batch_composition_invariant": true,
+    "gru_empty_input_rejected": true,
+    "gru_finite_loss_gradients": true,
+    "gru_unk_nonzero_gradient": true,
+    "gru_pad_zero_gradient": true,
+    "gru_unk_updated": true,
+    "gru_head_updated": true,
+    "gru_pad_stays_zero": true,
+    "gru_tiny_subset_learns": true,
+    "gru_pad_zero_after_overfit": true,
+    "gru_runtime_loss_finite": true,
+    "gru_pad_zero_after_runtime": true,
+    "same_initial_embedding_for_both_models": true,
+    "same_mask_exposure_both_runtime_checks": true,
+    "stage2_unchanged": true
+  },
+  "all_passed": true,
+  "weights_saved": false,
+  "diagnostic_weights_discarded": true,
+  "baseline_training_started": false,
+  "test_performance_accessed": false,
+  "scope": "training-only diagnostic learning and runtime; not baseline evaluation"
+}
